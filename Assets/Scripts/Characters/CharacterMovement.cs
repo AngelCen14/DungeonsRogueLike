@@ -3,26 +3,24 @@ using UnityEngine;
 
 namespace Characters {
     [RequireComponent(typeof(Rigidbody2D))]
-    public abstract class CharacterMovement : MonoBehaviour {
+    public class CharacterMovement : MonoBehaviour {
         // Components
         private Rigidbody2D _rigidbody;
         
         [Header("Movement")]
         [SerializeField]
         private float speed = 3f;
-        protected Vector2 MoveDirection;
-        protected Vector2 PointerPosition;
+        public Vector2 MoveDirection { get; set; }
+        public Vector2 PointerPosition { get; set; }
 
         #region Unity Methods
-        protected virtual void Awake() {
+        private void Awake() {
             _rigidbody = GetComponent<Rigidbody2D>();
         }
 
         private void Update() {
-            UpdateMovementDirection();
             FlipX(MoveDirection.x);
-            UpdatePointerPosition();
-            LookAtPointer();
+            FlipToPointer();
         }
 
         private void FixedUpdate() {
@@ -31,7 +29,7 @@ namespace Characters {
         #endregion
 
         #region Private Methods
-        private void LookAtPointer() {
+        private void FlipToPointer() {
             Vector2 direction = (PointerPosition - (Vector2)transform.position).normalized;
             FlipX(direction.x);
         }
@@ -46,11 +44,6 @@ namespace Characters {
                 transform.localScale = new Vector3(Math.Sign(x), 1, 1);
             }
         }
-        #endregion
-
-        #region Abstract Methods
-        protected abstract void UpdateMovementDirection();
-        protected abstract void UpdatePointerPosition();
         #endregion
         
         #region Public Methods

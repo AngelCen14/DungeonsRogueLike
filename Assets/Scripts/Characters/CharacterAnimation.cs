@@ -1,12 +1,11 @@
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace PlayerScripts {
+namespace Characters {
     [RequireComponent(typeof(Animator))]
-    [RequireComponent(typeof(PlayerMovement))]
-    public class PlayerAnimation : MonoBehaviour {
+    public class CharacterAnimation : MonoBehaviour {
         // Components
         private Animator _animator;
-        private PlayerMovement _playerMovement;
+        private CharacterMovement _characterMovement;
 
         #region Animator Hashes
         private readonly int _isMovingHash = Animator.StringToHash("IsMoving");
@@ -15,11 +14,11 @@ namespace PlayerScripts {
         #region Unity Methods
         private void Awake() {
             _animator = GetComponent<Animator>();
-            _playerMovement = GetComponent<PlayerMovement>();
+            _characterMovement = GetComponentInParent<CharacterMovement>();
         }
 
         private void Update() {
-            _animator.SetBool(_isMovingHash, _playerMovement.IsMoving());
+            _animator.SetBool(_isMovingHash, _characterMovement.IsMoving());
         }
         #endregion
     }
