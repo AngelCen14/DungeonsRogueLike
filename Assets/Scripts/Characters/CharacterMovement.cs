@@ -18,31 +18,14 @@ namespace Characters {
             _rigidbody = GetComponent<Rigidbody2D>();
         }
 
-        private void Update() {
-            FlipX(MoveDirection.x);
-            FlipToPointer();
-        }
-
         private void FixedUpdate() {
             Move();
         }
         #endregion
 
         #region Private Methods
-        private void FlipToPointer() {
-            Vector2 direction = (PointerPosition - (Vector2)transform.position).normalized;
-            FlipX(direction.x);
-        }
-        
         private void Move() {
             _rigidbody.linearVelocity = MoveDirection * speed;
-        }
-        
-        private void FlipX(float x) {
-            if (x != 0) {
-                // Math.Sign devuelve 1 si es positivo y -1 si es negativo
-                transform.localScale = new Vector3(Math.Sign(x), 1, 1);
-            }
         }
         #endregion
         
