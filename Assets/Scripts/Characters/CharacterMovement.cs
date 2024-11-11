@@ -25,13 +25,13 @@ namespace Characters {
 
         #region Private Methods
         private void Move() {
-            _rigidbody.linearVelocity = MoveDirection * speed;
+            _rigidbody.MovePosition(_rigidbody.position + MoveDirection * (speed * Time.fixedDeltaTime));
         }
         #endregion
         
         #region Public Methods
         public bool IsMoving() {
-            return _rigidbody.linearVelocity.magnitude > 0;
+            return MoveDirection.magnitude > 0;
         }
         #endregion
     }
