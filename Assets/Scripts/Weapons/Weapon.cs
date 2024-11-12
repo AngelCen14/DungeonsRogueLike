@@ -73,7 +73,7 @@ namespace Weapons {
 
                 // Muestra el valor del ángulo en la escena (solo en modo Play)
 #if UNITY_EDITOR
-                UnityEditor.Handles.Label(transform.position + Vector3.up * 0.5f + Vector3.right * 0.2f, 
+                UnityEditor.Handles.Label(transform.position + Vector3.up * 0.7f + Vector3.right * 0.3f, 
                     $"{_rotationAngle:F2}°");
 #endif
             }
