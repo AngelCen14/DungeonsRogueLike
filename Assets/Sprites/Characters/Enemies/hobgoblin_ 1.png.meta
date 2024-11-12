@@ -1,0 +1,1365 @@
+fileFormatVersion: 2
+guid: 76ac03138d8c05e4cab1eb7c43fb0a98
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6164980408175519493
+    second: hobgoblin_ 1_0
+  - first:
+      213: 2879711881712515960
+    second: hobgoblin_ 1_1
+  - first:
+      213: -3761957937794788160
+    second: hobgoblin_ 1_2
+  - first:
+      213: 2278184728179775056
+    second: hobgoblin_ 1_3
+  - first:
+      213: -4312667029312182285
+    second: hobgoblin_ 1_4
+  - first:
+      213: 7148718059785357084
+    second: hobgoblin_ 1_5
+  - first:
+      213: 8886496441802332033
+    second: hobgoblin_ 1_6
+  - first:
+      213: 4582880609202110407
+    second: hobgoblin_ 1_7
+  - first:
+      213: 8764654075896250318
+    second: hobgoblin_ 1_8
+  - first:
+      213: -6621030513252831415
+    second: hobgoblin_ 1_9
+  - first:
+      213: -1130811919353418018
+    second: hobgoblin_ 1_10
+  - first:
+      213: -1514551290041466066
+    second: hobgoblin_ 1_11
+  - first:
+      213: 6665126404743444639
+    second: hobgoblin_ 1_12
+  - first:
+      213: -2651413407432628996
+    second: hobgoblin_ 1_13
+  - first:
+      213: -8897944029071470594
+    second: hobgoblin_ 1_14
+  - first:
+      213: -5376101852600541962
+    second: hobgoblin_ 1_15
+  - first:
+      213: 3816866940146992453
+    second: hobgoblin_ 1_16
+  - first:
+      213: -1930691015149822177
+    second: hobgoblin_ 1_17
+  - first:
+      213: -8113326899700134598
+    second: hobgoblin_ 1_18
+  - first:
+      213: 5854495501241995846
+    second: hobgoblin_ 1_19
+  - first:
+      213: -6582842567880035307
+    second: hobgoblin_ 1_20
+  - first:
+      213: -1308448741098935368
+    second: hobgoblin_ 1_21
+  - first:
+      213: -4549182942608402940
+    second: hobgoblin_ 1_22
+  - first:
+      213: 9183993959064692973
+    second: hobgoblin_ 1_23
+  - first:
+      213: 29147361788444478
+    second: hobgoblin_ 1_24
+  - first:
+      213: 7502460410404829373
+    second: hobgoblin_ 1_25
+  - first:
+      213: -4204354712534958058
+    second: hobgoblin_ 1_26
+  - first:
+      213: 4711189317989245938
+    second: hobgoblin_ 1_27
+  - first:
+      213: 7395386832345739943
+    second: hobgoblin_ 1_28
+  - first:
+      213: 6845043200243032646
+    second: hobgoblin_ 1_29
+  - first:
+      213: -594754484296904987
+    second: hobgoblin_ 1_30
+  - first:
+      213: -3530052855655848772
+    second: hobgoblin_ 1_31
+  - first:
+      213: 3895981792700002463
+    second: hobgoblin_ 1_32
+  - first:
+      213: -2709810996493679541
+    second: hobgoblin_ 1_33
+  - first:
+      213: -1970434933455146129
+    second: hobgoblin_ 1_34
+  - first:
+      213: 5420875892752445513
+    second: hobgoblin_ 1_35
+  - first:
+      213: 8575890090473611158
+    second: hobgoblin_ 1_36
+  - first:
+      213: 6284363502123906953
+    second: hobgoblin_ 1_37
+  - first:
+      213: 4248392158359464565
+    second: hobgoblin_ 1_38
+  - first:
+      213: -6466591983202337164
+    second: hobgoblin_ 1_39
+  - first:
+      213: 6252148509923086026
+    second: hobgoblin_ 1_40
+  - first:
+      213: -1480686445723047835
+    second: hobgoblin_ 1_41
+  - first:
+      213: 856876765948921501
+    second: hobgoblin_ 1_42
+  - first:
+      213: -2958973903099397465
+    second: hobgoblin_ 1_43
+  - first:
+      213: 3492270426812253595
+    second: hobgoblin_ 1_44
+  - first:
+      213: -6706399204082476320
+    second: hobgoblin_ 1_45
+  - first:
+      213: -5004936107961719659
+    second: hobgoblin_ 1_46
+  - first:
+      213: 8936865031081065563
+    second: hobgoblin_ 1_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hobgoblin_ 1_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 119
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5076b8c84096e8550800000000000000
+      internalID: 6164980408175519493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 119
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b32f4f2bac6f720800000000000000
+      internalID: 2879711881712515960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 119
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4d7c1ff27dacbc0800000000000000
+      internalID: -3761957937794788160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_3
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 119
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05610ef90fcbd9f10800000000000000
+      internalID: 2278184728179775056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_4
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 119
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7ee43bf245624c0800000000000000
+      internalID: -4312667029312182285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_5
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 119
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c170de82339553360800000000000000
+      internalID: 7148718059785357084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_6
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 119
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187966f5e6d235b70800000000000000
+      internalID: 8886496441802332033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_7
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 119
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf748702a9a99f30800000000000000
+      internalID: 4582880609202110407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 95
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecfb9f4e17e42a970800000000000000
+      internalID: 8764654075896250318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_9
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 95
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94fea82f3df5d14a0800000000000000
+      internalID: -6621030513252831415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_10
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 95
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede6927fc8c8e40f0800000000000000
+      internalID: -1130811919353418018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_11
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 95
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2308fa40ab3bfae0800000000000000
+      internalID: -1514551290041466066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_12
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 95
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f983fc9d6294f7c50800000000000000
+      internalID: 6665126404743444639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_13
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 95
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf42541cd89443bd0800000000000000
+      internalID: -2651413407432628996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 95
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff03e38c07248480800000000000000
+      internalID: -8897944029071470594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_15
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 95
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fcdc6f49df3465b0800000000000000
+      internalID: -5376101852600541962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 72
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 545c46a624c38f430800000000000000
+      internalID: 3816866940146992453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_17
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 73
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fd4fe30cec435e0800000000000000
+      internalID: -1930691015149822177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_18
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 71
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d80c4cb2ca76f80800000000000000
+      internalID: -8113326899700134598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_19
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 71
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642d6a2d3a85f3150800000000000000
+      internalID: 5854495501241995846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_20
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 72
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514b039df8b05a4a0800000000000000
+      internalID: -6582842567880035307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_21
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 73
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bbadfb6dc477dde0800000000000000
+      internalID: -1308448741098935368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_22
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 71
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4065f8f573e0ed0c0800000000000000
+      internalID: -4549182942608402940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_23
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 71
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de8626dc8d9147f70800000000000000
+      internalID: 9183993959064692973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 47
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f3a810f5d876000800000000000000
+      internalID: 29147361788444478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_25
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 47
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db87c975ef71e1860800000000000000
+      internalID: 7502460410404829373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_26
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 47
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6104d912aa127a5c0800000000000000
+      internalID: -4204354712534958058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_27
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 47
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f32d5849b1816140800000000000000
+      internalID: 4711189317989245938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_28
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 47
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2b19e3421b1a660800000000000000
+      internalID: 7395386832345739943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_29
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 47
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64260b6268a7efe50800000000000000
+      internalID: 6845043200243032646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_30
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 47
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee89ea92f10fb7f0800000000000000
+      internalID: -594754484296904987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_31
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 47
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4a74c71abb20fc0800000000000000
+      internalID: -3530052855655848772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_32
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 23
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f90f5457cce411630800000000000000
+      internalID: 3895981792700002463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_33
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 23
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b440c818141d46ad0800000000000000
+      internalID: -2709810996493679541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_34
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 23
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63b26a2edb97a4e0800000000000000
+      internalID: -1970434933455146129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_35
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 23
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 940fcf647e1da3b40800000000000000
+      internalID: 5420875892752445513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_36
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 23
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69fd87ba99ea30770800000000000000
+      internalID: 8575890090473611158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_37
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 23
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98776872f4b863750800000000000000
+      internalID: 6284363502123906953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_38
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 23
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a2299b82255fa30800000000000000
+      internalID: 4248392158359464565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_39
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 23
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ef5dd4adc0246a0800000000000000
+      internalID: -6466591983202337164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_40
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace04f8c1f714c650800000000000000
+      internalID: 6252148509923086026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_41
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56821fac58b837be0800000000000000
+      internalID: -1480686445723047835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_42
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96cba2f0ec34eb00800000000000000
+      internalID: 856876765948921501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_43
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aafb1699ec9fe6d0800000000000000
+      internalID: -2958973903099397465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_44
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b950fb94379077030800000000000000
+      internalID: 3492270426812253595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_45
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea93b6b4751ee2a0800000000000000
+      internalID: -6706399204082476320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_46
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5946a698025ea8ab0800000000000000
+      internalID: -5004936107961719659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hobgoblin_ 1_47
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c723f656f160c70800000000000000
+      internalID: 8936865031081065563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hobgoblin_ 1_0: 6164980408175519493
+      hobgoblin_ 1_1: 2879711881712515960
+      hobgoblin_ 1_10: -1130811919353418018
+      hobgoblin_ 1_11: -1514551290041466066
+      hobgoblin_ 1_12: 6665126404743444639
+      hobgoblin_ 1_13: -2651413407432628996
+      hobgoblin_ 1_14: -8897944029071470594
+      hobgoblin_ 1_15: -5376101852600541962
+      hobgoblin_ 1_16: 3816866940146992453
+      hobgoblin_ 1_17: -1930691015149822177
+      hobgoblin_ 1_18: -8113326899700134598
+      hobgoblin_ 1_19: 5854495501241995846
+      hobgoblin_ 1_2: -3761957937794788160
+      hobgoblin_ 1_20: -6582842567880035307
+      hobgoblin_ 1_21: -1308448741098935368
+      hobgoblin_ 1_22: -4549182942608402940
+      hobgoblin_ 1_23: 9183993959064692973
+      hobgoblin_ 1_24: 29147361788444478
+      hobgoblin_ 1_25: 7502460410404829373
+      hobgoblin_ 1_26: -4204354712534958058
+      hobgoblin_ 1_27: 4711189317989245938
+      hobgoblin_ 1_28: 7395386832345739943
+      hobgoblin_ 1_29: 6845043200243032646
+      hobgoblin_ 1_3: 2278184728179775056
+      hobgoblin_ 1_30: -594754484296904987
+      hobgoblin_ 1_31: -3530052855655848772
+      hobgoblin_ 1_32: 3895981792700002463
+      hobgoblin_ 1_33: -2709810996493679541
+      hobgoblin_ 1_34: -1970434933455146129
+      hobgoblin_ 1_35: 5420875892752445513
+      hobgoblin_ 1_36: 8575890090473611158
+      hobgoblin_ 1_37: 6284363502123906953
+      hobgoblin_ 1_38: 4248392158359464565
+      hobgoblin_ 1_39: -6466591983202337164
+      hobgoblin_ 1_4: -4312667029312182285
+      hobgoblin_ 1_40: 6252148509923086026
+      hobgoblin_ 1_41: -1480686445723047835
+      hobgoblin_ 1_42: 856876765948921501
+      hobgoblin_ 1_43: -2958973903099397465
+      hobgoblin_ 1_44: 3492270426812253595
+      hobgoblin_ 1_45: -6706399204082476320
+      hobgoblin_ 1_46: -5004936107961719659
+      hobgoblin_ 1_47: 8936865031081065563
+      hobgoblin_ 1_5: 7148718059785357084
+      hobgoblin_ 1_6: 8886496441802332033
+      hobgoblin_ 1_7: 4582880609202110407
+      hobgoblin_ 1_8: 8764654075896250318
+      hobgoblin_ 1_9: -6621030513252831415
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

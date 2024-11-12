@@ -22,7 +22,9 @@ namespace Characters {
         private void Update() {
             transform.Flip(Axis.X, _characterMovement.MoveDirection.x);
             FlipToPointer();
-            _animator.SetBool(_isMovingHash, _characterMovement.IsMoving());
+            if (_animator.runtimeAnimatorController) {
+                _animator.SetBool(_isMovingHash, _characterMovement.IsMoving());
+            }
         }
         #endregion
         
