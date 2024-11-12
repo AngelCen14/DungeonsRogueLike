@@ -23,8 +23,9 @@ namespace Weapons {
         
         [SerializeField]
         private Transform attackOrigin;
-        private bool _canAttack = true;
-        public bool IsAttacking { get; set; }
+
+        private bool _canAttack;
+        private bool _isAttacking;
         
         #region Unity Methods
         private void Awake() {
@@ -32,8 +33,14 @@ namespace Weapons {
             _weaponAnimation = GetComponentInChildren<WeaponAnimation>();
         }
 
+        private void Start() {
+            _weaponAnimation.AttackAnimationFinished += OnAttackAnimationFinished;
+            _canAttack = true;
+            _isAttacking = false;
+        }
+        
         private void Update() {
-            if (IsAttacking) return;
+            if (_isAttacking) return;
             
             _direction = (PointerPosition - (Vector2)transform.position).normalized;
             
@@ -44,7 +51,11 @@ namespace Weapons {
             transform.Flip(Axis.Y, _direction.x);
             SetSpriteSortingOrder();
         }
-        
+
+        private void OnDisable() {
+            _weaponAnimation.AttackAnimationFinished -= OnAttackAnimationFinished;
+        }
+
         private void OnDrawGizmos() {
             if (PointerPosition != Vector2.zero) {
                 // Configura el color del Gizmo
@@ -69,6 +80,12 @@ namespace Weapons {
         }
         #endregion
         
+        #region Event Handlers
+        private void OnAttackAnimationFinished() {
+            _isAttacking = false;
+        }
+        #endregion
+        
         #region Private Methods
         // Coloca el arma por delante o por detras del jugador en base a la rotacion del arma
         private void SetSpriteSortingOrder() {
@@ -81,11 +98,10 @@ namespace Weapons {
         #endregion
         
         #region Public Methods
-        // Coloca el arma por delante o por detras del jugador en base a la rotacion del arma
         public void Attack() {
             if (!_canAttack) return;
             _weaponAnimation.TriggerAttackAnimation();
-            IsAttacking = true;
+            _isAttacking = true;
             StartCoroutine(AttackDelay());
         }
         #endregion

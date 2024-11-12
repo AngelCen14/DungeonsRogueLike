@@ -1,20 +1,24 @@
+using System;
 using UnityEngine;
+using UnityEngine.Scripting;
 
 namespace Weapons {
     [RequireComponent(typeof(Animator))]
     public class WeaponAnimation : MonoBehaviour {
         // Components
         private Animator _animator;
-        private Weapon _parentWeapon;
 
         #region Animator Hashes
         private readonly int _attackTrigger = Animator.StringToHash("AttackTrigger");
         #endregion
         
+        # region Events
+        public event Action AttackAnimationFinished;
+        # endregion
+        
         #region Unity Methods
         private void Awake() {
             _animator = GetComponent<Animator>();
-            _parentWeapon = GetComponentInParent<Weapon>();
         }
         #endregion
         
@@ -23,9 +27,10 @@ namespace Weapons {
             _animator.SetTrigger(_attackTrigger);
         }
         
-        // Se llama desde un evento de la animacion
-        public void ResetAttackingState() {
-            _parentWeapon.IsAttacking = false;
+        // Se llama desde el evento de la animacion de ataque
+        [Preserve]
+        public void OnAttackAnimationFinished() {
+            AttackAnimationFinished?.Invoke();
         }
         #endregion
     }

@@ -29,8 +29,19 @@ namespace PlayerScripts {
             HandleMovement();
             _weapon.PointerPosition = GetPointerPosition();
         }
+
+        private void OnDisable() {
+            _gameInput.AttackEvent -= OnAttack;
+        }
+
         # endregion
 
+        #region Event Handlers
+        private void OnAttack(object sender, EventArgs e) {
+            _weapon.Attack();
+        }
+        #endregion
+        
         #region Private Methods
         private Vector2 GetPointerPosition() {
             return _mainCamera.ScreenToWorldPoint(_gameInput.MousePosition);
@@ -40,12 +51,6 @@ namespace PlayerScripts {
             // Pasar el input al CharacterMovement
             _characterMovement.MoveDirection = _gameInput.MovementInput;
             _characterMovement.PointerPosition = GetPointerPosition();
-        }
-        #endregion
-
-        #region Event Handlers
-        private void OnAttack(object sender, EventArgs e) {
-            _weapon.Attack();
         }
         #endregion
     }
