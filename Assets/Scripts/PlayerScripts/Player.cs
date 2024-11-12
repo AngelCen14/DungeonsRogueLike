@@ -1,3 +1,4 @@
+using System;
 using Characters;
 using UnityEngine;
 using Weapons;
@@ -10,19 +11,23 @@ namespace PlayerScripts {
         private GameInput _gameInput;
         private CharacterMovement _characterMovement;
         private Camera _mainCamera;
-        private WeaponParent _weaponParent;
+        private Weapon _weapon;
         
         # region Unity Methods
         protected void Awake() {
             _gameInput = GetComponent<GameInput>();
             _characterMovement = GetComponent<CharacterMovement>();
             _mainCamera = Camera.main;
-            _weaponParent = GetComponentInChildren<WeaponParent>();
+            _weapon = GetComponentInChildren<Weapon>();
+        }
+
+        private void Start() {
+            _gameInput.AttackEvent += OnAttack;
         }
 
         private void Update() {
             HandleMovement();
-            _weaponParent.PointerPosition = GetPointerPosition();
+            _weapon.PointerPosition = GetPointerPosition();
         }
         # endregion
 
@@ -35,6 +40,12 @@ namespace PlayerScripts {
             // Pasar el input al CharacterMovement
             _characterMovement.MoveDirection = _gameInput.MovementInput;
             _characterMovement.PointerPosition = GetPointerPosition();
+        }
+        #endregion
+
+        #region Event Handlers
+        private void OnAttack(object sender, EventArgs e) {
+            _weapon.Attack();
         }
         #endregion
     }

@@ -1,23 +1,40 @@
+using System.Collections;
 using ExtensionMethods;
 using UnityEngine;
 using Utils;
 
 namespace Weapons {
-    public class WeaponParent : MonoBehaviour {
+    public class Weapon : MonoBehaviour {
         public Vector2 PointerPosition { get; set; }
+        
         private Vector2 _direction;
         private float _rotationAngle;
-
+        
+        private WeaponAnimation _weaponAnimation;
+        
+        [Header("Rendering")]
         [SerializeField] 
         private SpriteRenderer characterRenderer;
         private SpriteRenderer _weaponRederer;
-
+        
+        [Header("Attack")]
+        [SerializeField]
+        private float delay = 0.3f;
+        
+        [SerializeField]
+        private Transform attackOrigin;
+        private bool _canAttack = true;
+        public bool IsAttacking { get; set; }
+        
         #region Unity Methods
         private void Awake() {
             _weaponRederer = GetComponentInChildren<SpriteRenderer>();
+            _weaponAnimation = GetComponentInChildren<WeaponAnimation>();
         }
 
         private void Update() {
+            if (IsAttacking) return;
+            
             _direction = (PointerPosition - (Vector2)transform.position).normalized;
             
             // Calcular la rotacion, bloqueando x e y a 0, ya que solo debe rotar en z
@@ -60,6 +77,24 @@ namespace Weapons {
             } else {
                 _weaponRederer.sortingOrder = characterRenderer.sortingOrder + 1;
             }
+        }
+        #endregion
+        
+        #region Public Methods
+        // Coloca el arma por delante o por detras del jugador en base a la rotacion del arma
+        public void Attack() {
+            if (!_canAttack) return;
+            _weaponAnimation.TriggerAttackAnimation();
+            IsAttacking = true;
+            StartCoroutine(AttackDelay());
+        }
+        #endregion
+
+        #region Coroutines
+        private IEnumerator AttackDelay() {
+            _canAttack = false;
+            yield return new WaitForSeconds(delay);
+            _canAttack = true;
         }
         #endregion
     }
