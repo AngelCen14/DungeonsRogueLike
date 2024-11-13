@@ -1,32 +1,28 @@
 using System;
-using Characters;
 using UnityEngine;
 using Weapons;
 
-namespace PlayerScripts {
+namespace Characters.PlayerScripts {
     [RequireComponent(typeof(GameInput))]
     [RequireComponent(typeof(CharacterMovement))]
-    public class Player : MonoBehaviour {
+    public class Player : Character {
         // Components
         private GameInput _gameInput;
-        private CharacterMovement _characterMovement;
         private Camera _mainCamera;
-        private Weapon _weapon;
         
         # region Unity Methods
-        protected void Awake() {
+        protected override void Awake() {
+            base.Awake();
             _gameInput = GetComponent<GameInput>();
-            _characterMovement = GetComponent<CharacterMovement>();
             _mainCamera = Camera.main;
-            _weapon = GetComponentInChildren<Weapon>();
         }
 
-        private void Start() {
+        protected void Start() {
             _gameInput.AttackEvent += OnAttack;
         }
 
-        private void Update() {
-            HandleMovement();
+        protected override void Update() {
+            base.Update();
             _weapon.PointerPosition = GetPointerPosition();
         }
 
@@ -41,17 +37,18 @@ namespace PlayerScripts {
             _weapon.Attack();
         }
         #endregion
-        
+
         #region Private Methods
-        private Vector2 GetPointerPosition() {
+        protected override Vector2 GetMoveDirection() {
+            return _gameInput.MovementInput.normalized;
+        }
+        protected override Vector2 GetPointerPosition() {
             return _mainCamera.ScreenToWorldPoint(_gameInput.MousePosition);
         }
-
-        private void HandleMovement() {
-            // Pasar el input al CharacterMovement
-            _characterMovement.MoveDirection = _gameInput.MovementInput;
-            _characterMovement.PointerPosition = GetPointerPosition();
-        }
         #endregion
+
+        private void OnCollisionEnter2D(Collision2D collision) {
+            Debug.Log("Collision" + collision.gameObject.name);
+        }
     }
 }

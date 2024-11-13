@@ -7,7 +7,6 @@ namespace Characters {
     public class CharacterAnimation : MonoBehaviour {
         // Components
         private Animator _animator;
-        private CharacterMovement _characterMovement;
 
         #region Animator Hashes
         private readonly int _isMovingHash = Animator.StringToHash("IsMoving");
@@ -16,21 +15,18 @@ namespace Characters {
         #region Unity Methods
         private void Awake() {
             _animator = GetComponent<Animator>();
-            _characterMovement = GetComponentInParent<CharacterMovement>();
-        }
-        
-        private void Update() {
-            transform.Flip(Axis.X, _characterMovement.MoveDirection.x);
-            FlipToPointer();
-            if (_animator.runtimeAnimatorController) {
-                _animator.SetBool(_isMovingHash, _characterMovement.IsMoving());
-            }
         }
         #endregion
         
-        #region Private Methods
-        private void FlipToPointer() {
-            Vector2 direction = (_characterMovement.PointerPosition - (Vector2)transform.position).normalized;
+        #region Public Methods
+        public void UpdateMoveAnimation(bool isMoving) {
+            if (_animator.runtimeAnimatorController) {
+                _animator.SetBool(_isMovingHash, isMoving);
+            }
+        }
+
+        public void FlipSpriteToPointer(Vector2 pointerPosition) {
+            Vector2 direction = (pointerPosition - (Vector2)transform.position).normalized;
             transform.Flip(Axis.X, direction.x);
         }
         #endregion

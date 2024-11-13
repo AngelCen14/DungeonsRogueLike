@@ -24,6 +24,12 @@ namespace Weapons {
         [SerializeField]
         private Transform attackOrigin;
 
+        [SerializeField]
+        private float attackRadius;
+
+        [SerializeField]
+        private LayerMask attackLayer;
+
         private bool _canAttack;
         private bool _isAttacking;
         
@@ -57,10 +63,11 @@ namespace Weapons {
         }
 
         private void OnDrawGizmos() {
+            #region Weapon Angle
             if (PointerPosition != Vector2.zero) {
                 // Configura el color del Gizmo
                 Gizmos.color = Color.red;
-        
+
                 // Dibuja una línea desde el objeto hacia el puntero, mostrando la dirección
                 Gizmos.DrawLine(transform.position, (Vector2)transform.position + _direction);
 
@@ -73,13 +80,22 @@ namespace Weapons {
 
                 // Muestra el valor del ángulo en la escena (solo en modo Play)
 #if UNITY_EDITOR
-                UnityEditor.Handles.Label(transform.position + Vector3.up * 0.7f + Vector3.right * 0.3f, 
+                UnityEditor.Handles.Label(transform.position + Vector3.up * 0.7f + Vector3.right * 0.3f,
                     $"{_rotationAngle:F2}°");
 #endif
             }
+            #endregion
+
+            #region Attack Radius
+            if (attackOrigin) {
+                Gizmos.color = Color.blue;
+                if (_isAttacking) Gizmos.color = Color.red;
+                Gizmos.DrawWireSphere(attackOrigin.position, attackRadius);
+            }
+            #endregion
         }
         #endregion
-        
+
         #region Event Handlers
         private void OnAttackAnimationFinished() {
             _isAttacking = false;
@@ -102,6 +118,14 @@ namespace Weapons {
             if (!_canAttack) return;
             _weaponAnimation.TriggerAttackAnimation();
             _isAttacking = true;
+
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(attackOrigin.position, attackRadius, attackLayer);
+            foreach (Collider2D collider in colliders) {
+                if (collider.TryGetComponent<IDamageable>(out IDamageable damageable)) {
+                    damageable.Damage(1);
+                }
+            }
+
             StartCoroutine(AttackDelay());
         }
         #endregion
