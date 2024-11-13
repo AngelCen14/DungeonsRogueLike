@@ -2,18 +2,19 @@ using UnityEngine;
 using Weapons;
 
 namespace Characters {
+    [SelectionBase]
     [RequireComponent(typeof(CharacterMovement))]
     public abstract class Character : MonoBehaviour, IDamageable {
         // Components
-        protected CharacterMovement _characterMovement;
-        protected CharacterAnimation _characterAnimation;
-        protected Weapon _weapon;
+        private CharacterMovement _characterMovement;
+        private CharacterAnimation _characterAnimation;
+        protected Weapon Weapon;
 
         # region Unity Methods
         protected virtual void Awake() {
             _characterMovement = GetComponent<CharacterMovement>();
             _characterAnimation = GetComponentInChildren<CharacterAnimation>();
-            _weapon = GetComponentInChildren<Weapon>();
+            Weapon = GetComponentInChildren<Weapon>();
         }
 
         protected virtual void Update() {

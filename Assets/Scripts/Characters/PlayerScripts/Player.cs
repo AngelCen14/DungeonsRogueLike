@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using Weapons;
 
 namespace Characters.PlayerScripts {
     [RequireComponent(typeof(GameInput))]
@@ -23,7 +22,7 @@ namespace Characters.PlayerScripts {
 
         protected override void Update() {
             base.Update();
-            _weapon.PointerPosition = GetPointerPosition();
+            Weapon.PointerPosition = GetPointerPosition();
         }
 
         private void OnDisable() {
@@ -34,7 +33,7 @@ namespace Characters.PlayerScripts {
 
         #region Event Handlers
         private void OnAttack(object sender, EventArgs e) {
-            _weapon.Attack();
+            Weapon.Attack();
         }
         #endregion
 
