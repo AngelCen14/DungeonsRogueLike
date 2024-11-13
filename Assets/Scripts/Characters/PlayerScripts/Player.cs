@@ -9,7 +9,7 @@ namespace Characters.PlayerScripts {
         private GameInput _gameInput;
         private Camera _mainCamera;
         
-        # region Unity Methods
+        #region Unity Methods
         protected override void Awake() {
             base.Awake();
             _gameInput = GetComponent<GameInput>();
@@ -29,7 +29,7 @@ namespace Characters.PlayerScripts {
             _gameInput.AttackEvent -= OnAttack;
         }
 
-        # endregion
+        #endregion
 
         #region Event Handlers
         private void OnAttack(object sender, EventArgs e) {
@@ -37,7 +37,7 @@ namespace Characters.PlayerScripts {
         }
         #endregion
 
-        #region Private Methods
+        #region Overrided Methods
         protected override Vector2 GetMoveDirection() {
             return _gameInput.MovementInput.normalized;
         }
@@ -45,9 +45,5 @@ namespace Characters.PlayerScripts {
             return _mainCamera.ScreenToWorldPoint(_gameInput.MousePosition);
         }
         #endregion
-
-        private void OnCollisionEnter2D(Collision2D collision) {
-            Debug.Log("Collision" + collision.gameObject.name);
-        }
     }
 }

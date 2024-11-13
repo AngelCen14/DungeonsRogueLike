@@ -1,12 +1,12 @@
 using System.Collections;
 using ExtensionMethods;
+using Interfaces;
 using UnityEngine;
 using Utils;
 
 namespace Weapons {
     public class Weapon : MonoBehaviour {
         public Vector2 PointerPosition { get; set; }
-        
         private Vector2 _direction;
         private float _rotationAngle;
         
@@ -46,7 +46,8 @@ namespace Weapons {
         }
         
         private void Update() {
-            if (_isAttacking) return;
+            // Hasta que no acabe el ataque no se podra mover el arma
+            if (_isAttacking) return; 
             
             _direction = (PointerPosition - (Vector2)transform.position).normalized;
             
@@ -119,9 +120,9 @@ namespace Weapons {
             _weaponAnimation.TriggerAttackAnimation();
             _isAttacking = true;
 
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(attackOrigin.position, attackRadius, attackLayer);
-            foreach (Collider2D collider in colliders) {
-                if (collider.TryGetComponent<IDamageable>(out IDamageable damageable)) {
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(attackOrigin.position, attackRadius,attackLayer);
+            foreach (Collider2D c in colliders) {
+                if (c.TryGetComponent<IDamageable>(out IDamageable damageable)) {
                     damageable.Damage(1);
                 }
             }

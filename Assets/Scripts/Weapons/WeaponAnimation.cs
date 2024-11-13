@@ -12,9 +12,9 @@ namespace Weapons {
         private readonly int _attackTrigger = Animator.StringToHash("AttackTrigger");
         #endregion
         
-        # region Events
+        #region Events
         public event Action AttackAnimationFinished;
-        # endregion
+        #endregion
         
         #region Unity Methods
         private void Awake() {

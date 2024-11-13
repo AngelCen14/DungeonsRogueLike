@@ -1,3 +1,4 @@
+using Interfaces;
 using UnityEngine;
 using Weapons;
 
@@ -10,7 +11,7 @@ namespace Characters {
         private CharacterAnimation _characterAnimation;
         protected Weapon Weapon;
 
-        # region Unity Methods
+        #region Unity Methods
         protected virtual void Awake() {
             _characterMovement = GetComponent<CharacterMovement>();
             _characterAnimation = GetComponentInChildren<CharacterAnimation>();
@@ -21,7 +22,7 @@ namespace Characters {
             HandleMovement();
             HandleAnimation();
         }
-        # endregion
+        #endregion
 
         #region Private Methods
         private void HandleMovement() {

@@ -21,7 +21,7 @@ namespace Characters {
             Move();
         }
         #endregion
-
+        
         #region Private Methods
         private void Move() {
             _rigidbody.MovePosition(_rigidbody.position + MoveDirection * (speed * Time.fixedDeltaTime));
