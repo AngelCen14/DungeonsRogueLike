@@ -19,12 +19,7 @@ namespace Characters.PlayerScripts {
         protected void Start() {
             _gameInput.AttackEvent += OnAttack;
         }
-
-        protected override void Update() {
-            base.Update();
-            Weapon.PointerPosition = GetPointerPosition();
-        }
-
+        
         private void OnDisable() {
             _gameInput.AttackEvent -= OnAttack;
         }

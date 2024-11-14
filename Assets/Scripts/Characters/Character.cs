@@ -21,6 +21,7 @@ namespace Characters {
         protected virtual void Update() {
             HandleMovement();
             HandleAnimation();
+            RotateWeapon();
         }
         #endregion
 
@@ -33,6 +34,10 @@ namespace Characters {
         private void HandleAnimation() {
             _characterAnimation.UpdateMoveAnimation(_characterMovement.IsMoving());
             _characterAnimation.FlipSpriteToPointer(_characterMovement.PointerPosition);
+        }
+
+        private void RotateWeapon() {
+            Weapon.PointerPosition = GetPointerPosition();
         }
         #endregion
 
