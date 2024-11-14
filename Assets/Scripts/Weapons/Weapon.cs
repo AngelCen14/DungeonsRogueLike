@@ -66,20 +66,11 @@ namespace Weapons {
         private void OnDrawGizmos() {
             #region Weapon Angle
             if (PointerPosition != Vector2.zero) {
-                // Configura el color del Gizmo
                 Gizmos.color = Color.red;
-
-                // Dibuja una línea desde el objeto hacia el puntero, mostrando la dirección
                 Gizmos.DrawLine(transform.position, (Vector2)transform.position + _direction);
-
-                // Cambia el color para el eje de referencia
                 Gizmos.color = Color.blue;
-
-                // Dibuja una línea que representa el eje X del objeto (sin rotación)
                 Vector2 reference = (Vector2)transform.position + Vector2.right;
                 Gizmos.DrawLine(transform.position, reference);
-
-                // Muestra el valor del ángulo en la escena (solo en modo Play)
 #if UNITY_EDITOR
                 UnityEditor.Handles.Label(transform.position + Vector3.up * 0.7f + Vector3.right * 0.3f,
                     $"{_rotationAngle:F2}°");
