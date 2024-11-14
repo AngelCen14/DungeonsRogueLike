@@ -6,13 +6,28 @@ namespace Characters.Enemies {
         
         [SerializeField]
         private Player player;
-        
-        protected override Vector2 GetMoveDirection() {
-            return Vector2.zero;
-        }
 
-        protected override Vector2 GetPointerPosition() {
-            return player.transform.position;
+        [SerializeField] 
+        private float chaseDistanceThreshold = 3f;
+        
+        [SerializeField] 
+        private float attackDistanceThreshold = 0.8f;
+        
+        #region Overrides
+        protected override void UpdateMoveAndPointer() {
+            if (!player) return;
+            
+            float distance = Vector2.Distance(player.transform.position, transform.position);
+            if (distance < chaseDistanceThreshold) {
+                PointerPosition = player.transform.position;
+                if (distance <= attackDistanceThreshold) {
+                    MoveDirection = Vector2.zero;
+                    Weapon.Attack();
+                } else {
+                    MoveDirection = (player.transform.position - transform.position).normalized;
+                }
+            }
         }
+        #endregion
     }
 }

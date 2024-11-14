@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace Characters.PlayerScripts {
     [RequireComponent(typeof(GameInput))]
-    [RequireComponent(typeof(CharacterMovement))]
     public class Player : Character {
         // Components
         private GameInput _gameInput;
@@ -19,25 +18,22 @@ namespace Characters.PlayerScripts {
         protected void Start() {
             _gameInput.AttackEvent += OnAttack;
         }
-        
+
         private void OnDisable() {
             _gameInput.AttackEvent -= OnAttack;
         }
-
+        #endregion
+        
+        #region Overrides
+        protected override void UpdateMoveAndPointer() {
+            MoveDirection = _gameInput.MovementInput.normalized;
+            PointerPosition = _mainCamera.ScreenToWorldPoint(_gameInput.MousePosition);
+        }
         #endregion
 
         #region Event Handlers
         private void OnAttack(object sender, EventArgs e) {
             Weapon.Attack();
-        }
-        #endregion
-
-        #region Overrided Methods
-        protected override Vector2 GetMoveDirection() {
-            return _gameInput.MovementInput.normalized;
-        }
-        protected override Vector2 GetPointerPosition() {
-            return _mainCamera.ScreenToWorldPoint(_gameInput.MousePosition);
         }
         #endregion
     }

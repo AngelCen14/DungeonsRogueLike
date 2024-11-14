@@ -10,6 +10,11 @@ namespace Characters {
         private CharacterMovement _characterMovement;
         private CharacterAnimation _characterAnimation;
         protected Weapon Weapon;
+        
+        protected Vector2 MoveDirection { get; set; }
+        protected Vector2 PointerPosition { get; set; }
+        
+        private int _health = 3;
 
         #region Unity Methods
         protected virtual void Awake() {
@@ -19,6 +24,7 @@ namespace Characters {
         }
 
         protected virtual void Update() {
+            UpdateMoveAndPointer();
             HandleMovement();
             HandleAnimation();
             RotateWeapon();
@@ -27,8 +33,8 @@ namespace Characters {
 
         #region Private Methods
         private void HandleMovement() {
-            _characterMovement.MoveDirection = GetMoveDirection();
-            _characterMovement.PointerPosition = GetPointerPosition();
+            _characterMovement.MoveDirection = MoveDirection;
+            _characterMovement.PointerPosition = PointerPosition;
         }
 
         private void HandleAnimation() {
@@ -37,18 +43,21 @@ namespace Characters {
         }
 
         private void RotateWeapon() {
-            Weapon.PointerPosition = GetPointerPosition();
+            Weapon.PointerPosition = PointerPosition;
         }
         #endregion
-
+        
         #region Abstract Methods
-        protected abstract Vector2 GetMoveDirection();
-        protected abstract Vector2 GetPointerPosition();
+        protected abstract void UpdateMoveAndPointer();
         #endregion
-
+        
         #region Interfaces Implementations
         public void Damage(float damage) {
+            _health -= (int)damage;
             Debug.Log($"{gameObject.name} received {damage} of damage");
+            if (_health <= 0) {
+                Debug.Log($"{gameObject.name} should die!");
+            }
         }
         #endregion
     }
