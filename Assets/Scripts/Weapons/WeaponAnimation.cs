@@ -26,12 +26,15 @@ namespace Weapons {
         public void TriggerAttackAnimation() {
             _animator.SetTrigger(_attackTrigger);
         }
+        #endregion
         
-        // Se llama desde el evento de la animacion de ataque
+        #region Animation Events
+        // Se llama desde el evento al final de la animacion de ataque
         [Preserve]
         public void OnAttackAnimationFinished() {
             AttackAnimationFinished?.Invoke();
         }
         #endregion
+        
     }
 }
